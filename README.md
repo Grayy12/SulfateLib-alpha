@@ -22,8 +22,8 @@ local MainTab = window:CreateTab({
 })
 
 --[[
-name = <string> - The name of the Window
-description = <string> - A Description for the Window
+name = <string> - The name of the Window.
+description = <string> - A Description for the Window.
 ]]--
 ```
 
@@ -35,7 +35,7 @@ MainTab:CreateSection({
 })
 
 --[[
-name = <string> - The Name of the Section
+name = <string> - The Name of the Section.
 --]]
 ```
 
@@ -50,8 +50,8 @@ MainTab:CreateButton({
 })
 
 --[[
-name = <string> - The Name of the Button
-callback = <function> - The Function of the Button
+name = <string> - The Name of the Button.
+callback = <function> - The Function of the Button.
 ]]--
 ```
 
@@ -67,9 +67,9 @@ MainTab:CreateToggle({
 })
 
 --[[
-name = <string> - The Name of the Toggle
-default = <bool> - The default value of the Toggle
-callback = <function> - The Function of the Toggle
+name = <string> - The Name of the Toggle.
+default = <bool> - The default value of the Toggle.
+callback = <function> - The Function of the Toggle.
 ]]--
 ```
 
