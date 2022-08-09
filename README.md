@@ -3,7 +3,7 @@
 # Starting the library
 
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Grayy12/SulfateLib-alpha/main/Sulfate.lua?token=GHSAT0AAAAAABXMGZCWGQ4MUMC3WOQHY5VCYXSRJ5A",true))()
+local SulfateLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Grayy12/SulfateLib-alpha/main/Sulfate.lua?token=GHSAT0AAAAAABXMGZCWGQ4MUMC3WOQHY5VCYXSRJ5A",true))()
 ```
 
 
@@ -43,7 +43,7 @@ name = <string> - The Name of the Section
 
 ```lua
 MainTab:CreateButton({
-	name = "Click",
+	name = "Button",
 	callback = function()
 		print("Clicked button")
 	end,
@@ -52,4 +52,61 @@ MainTab:CreateButton({
 --[[
 name = <string> - The Name of the Button
 callback = <function> - The Function of the Button
+]]--
+```
+
+# Creating a Toggle
+
+```lua
+MainTab:CreateToggle({
+	name = "Toggle",
+	default = false,
+	callback = function(value)
+		print(value)
+	end,
+})
+
+--[[
+name = <string> - The Name of the Toggle
+default = <bool> - The default value of the Toggle
+callback = <function> - The Function of the Toggle
+]]--
+```
+
+# Creating a Slider
+
+```lua
+MainTab:CreateSlider({
+	name = "slider",
+	minvalue = 0,
+	default = 0,
+	maxvalue = 100,
+	callback = function(value)
+		print(value)
+	end,
+})
+
+--[[
+name = <string> - The Name of the Toggle.
+minvalue = <number> - The Minimum value of the Slider.
+default = <number> - The default value of the Slider.
+maxvalue = <number> - The Maximum value of the Slider.
+callback = <function> - The Function of the Toggle.
+]]--
+```
+
+# Creating a Notification
+
+```lua
+SulfateLib:CreateNotification({
+	title = "Test",
+	content = "Test content",
+	time = 5,
+})
+
+--[[
+title = <string> - The Title of the Notification.
+content = <string> - The Content of the Notification.
+time = <number> - The Amount of time the Notification is on screen.
+]]--
 ```
