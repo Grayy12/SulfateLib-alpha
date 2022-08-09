@@ -26,3 +26,30 @@ name = <string> - The name of the Window
 description = <string> - A Description for the Window
 ]]--
 ```
+
+# Creating a Section
+
+```lua
+MainTab:CreateSection({
+	name = "Button Section",
+})
+
+--[[
+name = <string> - The Name of the Section
+--]]
+```
+
+# Creating a Button
+
+```lua
+MainTab:CreateButton({
+	name = "Click",
+	callback = function()
+		print("Clicked button")
+	end,
+})
+
+--[[
+name = <string> - The Name of the Button
+callback = <function> - The Function of the Button
+```
