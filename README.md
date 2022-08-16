@@ -25,7 +25,7 @@ local MainTab = window:CreateTab({
 --[[
 name = <string> - The name of the Window.
 description = <string> - A Description for the Window.
-image = <string> - Add custom image.
+image = <string> - Add custom icon.
 ]]--
 ```
 
