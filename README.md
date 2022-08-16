@@ -19,11 +19,13 @@ local window = SulfateLib:Window()
 local MainTab = window:CreateTab({
 	name = "MainTab",
 	description = "This is the main tab description",
+	image = "rbxassetid://7072977798"
 })
 
 --[[
 name = <string> - The name of the Window.
 description = <string> - A Description for the Window.
+image = <string> - Add custom image.
 ]]--
 ```
 
